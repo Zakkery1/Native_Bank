@@ -3,6 +3,9 @@ from typing import Union
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+# uvicorn main:app  --reload --host 0.0.0.0 --port 8000
+# fastapi dev main.py
+
 app = FastAPI()
 origins = ["*"]
 app.add_middleware(
